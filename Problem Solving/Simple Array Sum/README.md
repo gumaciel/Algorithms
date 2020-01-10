@@ -18,6 +18,7 @@ The first line contains an integer, **n**, denoting the size of the array.
 The second line contains **n** space-separated integers representing the array's elements.
 
 **Constraints**
+
 **0 < n, ar[i] <= 1000**
 
 **Output Format**
