@@ -8,7 +8,32 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            seventyExercise();
+            eightyExercise();
+        }
+        static void eightyExercise()
+        {
+            // Complete the arrayManipulation function below.
+            int n = 10;
+            int[][] queries = new int[][]
+            {
+                new int[] {2, 6, 8},
+                new int[] {3, 5, 7},
+                new int[] {1, 8, 1},
+                new int[] {5, 9, 15}
+            };
+            int[] arrayManipulated = new int[n];
+            foreach (int[] valueQueries in queries)
+            {
+                for (int i = valueQueries[0] - 1; i < valueQueries[1]; i++)
+                {
+                    arrayManipulated[i] += valueQueries[2];
+                    Console.Write(i);
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine(arrayManipulated.Max());
+
         }
         static void seventyExercise()
         {
